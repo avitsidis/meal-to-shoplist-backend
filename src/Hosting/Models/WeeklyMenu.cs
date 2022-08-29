@@ -1,6 +1,6 @@
 using System;
 
-namespace Models
+namespace MealToShopList.Models
 {
     public class WeeklyMenu
     {

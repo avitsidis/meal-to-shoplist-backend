@@ -1,7 +1,4 @@
-using System;
-using System.Collections;
-
-namespace Models
+namespace MealToShopList.Models
 {
     public class Meal
     {
@@ -9,11 +6,7 @@ namespace Models
         public MealTime MealTime { get; set; }
         public int DayOfWeek { get; set; }
         public Recipe Recipe { get; set; }
-        public string Note { get; set; }
-    }
 
-    public enum MealTime
-    {
-        Breakfast,Lunch,Dinner
+        public string? Note { get; set; }
     }
 }

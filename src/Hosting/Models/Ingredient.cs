@@ -1,11 +1,19 @@
 using System;
 
-namespace Models
+namespace MealToShopList.Models
 {
     public class Ingredient
     {
         public long Id { get; set; }
         public string Name { get; set; }
+
+        public Ingredient(string name, Category category)
+        {
+            Name = name;
+            Category = category;
+            CreatedAt = DateTime.UtcNow;
+        }
+
         public Category Category { get; set; }
         public DateTime CreatedAt { get; set; }
 
