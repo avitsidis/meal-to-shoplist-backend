@@ -8,6 +8,7 @@ namespace MealToShopList.Data
 {
     public class MealToShopListDbContext : DbContext
     {
+        public DbSet<Ingredient> Ingredients { get; set; }
         public DbSet<Meal> Meals { get; set; }
         public DbSet<Recipe> Recipes { get; set; }
         public DbSet<ShopList> ShopLists { get; set; }
