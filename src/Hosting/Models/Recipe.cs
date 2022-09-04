@@ -5,14 +5,13 @@ namespace MealToShopList.Models
         public long Id { get; set; }
         public string Name { get; set; }
 
-        public Recipe(string name, string link)
+        public Recipe(string name)
         {
             Name = name;
-            Link = link;
             CreatedAt = DateTime.UtcNow;
         }
 
-        public string Link { get; set; }
+        public string? Link { get; set; }
         public DateTime CreatedAt { get; set; }
         public List<Ingredient> Ingredients { get; set; } = new List<Ingredient>();
     }

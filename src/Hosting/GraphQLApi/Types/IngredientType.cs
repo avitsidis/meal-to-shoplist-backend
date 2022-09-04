@@ -10,9 +10,9 @@ namespace MealToShopList.GraphQLApi.Types
         {
             Name = "Ingredient";
 
-            Field(h => h.Id).Description("The id of the human.");
-            Field(h => h.Name).Description("The name of the human.");
-
+            Field(h => h.Id).Description("The id of the ingredient");
+            Field(h => h.Name);
+            Field(h => h.Category);
         }
     }
 }
